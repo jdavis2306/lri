@@ -1,0 +1,17 @@
+.keyword-tag {
+  cursor: default;
+
+  &.cursor-pointer {
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+
+  // Override
+  a,
+  a:hover {
+    color: inherit;
+  }
+}

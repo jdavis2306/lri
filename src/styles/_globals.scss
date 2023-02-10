@@ -1,0 +1,60 @@
+@import "antd/dist/antd.css";
+@import "./antd-colors.scss";
+@import "./navbar.scss";
+@import "./all-members.scss";
+@import "./all-partnerships.scss";
+@import "./all-accounts.scss";
+@import "./keyword-filter.scss";
+@import "./keyword-selector.scss";
+@import "./keyword-tag.scss";
+@import "./member-form-public.scss";
+@import "./member-form-private.scss";
+@import "./member-form-insight.scss";
+@import "./register-account-form.scss";
+@import "./register-partner-form.scss";
+@import "./save-changes-modal.scss";
+
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans); // Work Sans font
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji"; // Work Sans is imported from google, the rest are the ant-d fallbacks
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.next-page-container {
+  padding: 12px;
+}
+
+@media screen and (min-width: 600px) {
+  .next-page-container {
+    padding: 12px 24px;
+  }
+}
+
+// Override - table cells
+td.ant-table-cell.ant-table-cell.ant-table-cell.ant-table-cell {
+  background-color: transparent;
+}
+
+// Override - table rows on hover
+.ant-table-cell-row-hover.ant-table-cell-row-hover.ant-table-cell-row-hover.ant-table-cell-row-hover {
+  background-color: transparent;
+}
+
+// Override - table headers on hover
+.ant-table-thead th.ant-table-column-has-sorters:hover {
+  background-color: var(--blue-1);
+}
+
+// Make it so text isn't highlighted when clicking headers
+th.ant-table-cell {
+  user-select: none;
+}
